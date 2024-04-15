@@ -18,5 +18,16 @@ function onaddtaskclicked(event){
     todoContainer.insertAdjacentHTML('afterbegin',taskname)
 }
 
+function ontodoclicked(event){
+    
+    let targetelement = event.toelement
+
+    while(!targetelement.classlist.containts("task")) {
+        targetelement = targetelement.parentelement
+
+        
+    }
+}
+
 // 3. link,element, event to the function
 addtaskbutton.addEventListener('click', onaddtaskclicked)
