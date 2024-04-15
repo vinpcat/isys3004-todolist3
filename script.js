@@ -1,6 +1,6 @@
 // Empty script file to start with
 
-
+console(l)
 // 1. Assgin variables to DOM elemetns
 let addtaskbutton = document.getElementById("add-button");
 let newtaskinput = document.getElementById("task-input");
@@ -25,9 +25,15 @@ function ontodoclicked(event){
     while(!targetelement.classlist.containts("task")) {
         targetelement = targetelement.parentelement
 
-        
+    }
+    let checkbox = targetelement.queryselector(".checkbox")
+    if (checkbox.checked){
+        targetelement.classlist.add("completed")
+    } else {
+        targetelement.classlist.remove("completed")
     }
 }
 
 // 3. link,element, event to the function
 addtaskbutton.addEventListener('click', onaddtaskclicked)
+todocontainer.addEventListener('click', ontodoclicked)
