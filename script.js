@@ -1,6 +1,5 @@
 // Empty script file to start with
 
-console(l)
 // 1. Assgin variables to DOM elemetns
 let addtaskbutton = document.getElementById("add-button");
 let newtaskinput = document.getElementById("task-input");
