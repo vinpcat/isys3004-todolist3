@@ -4,8 +4,8 @@
 let addtaskbutton = document.getElementById("add-button");
 let newtaskinput = document.getElementById("task-input");
 let todolistcontainer = document.getElementById("todo-list");
-let templateelement = document.getelementbydid("todo-item-template")
-let template = templateelement.innerhtml
+let templateelement = document.getelementbydid("todo-item-template");
+let template = templateelement.innerhtml;
 
 // 2. Write function to handle the wevents
 function onaddtaskclicked(event){
