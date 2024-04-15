@@ -3,7 +3,7 @@
 // 1. Assgin variables to DOM elemetns
 let addtaskbutton = document.getElementById("add-button");
 let newtaskinput = document.getElementById("task-input");
-let todocontainer = document.getElementById("todo-list");
+let todolistcontainer = document.getElementById("todo-list");
 let templateelement = document.getelementbydid("todo-item-template")
 let template = templateelement.innerhtml
 
